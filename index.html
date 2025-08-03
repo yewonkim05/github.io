@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오래된 미래 - 세대 연결의 새로운 시작</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #83a3e9; /* 채도 낮은 파란색 */
+            --secondary-color: #3f5a7e; /* 더 밝은 파란색 */
+            --accent-color: #d1b490; /* 강조색 (기존 유지) */
+            --background-color: #f4f4f4; /* 부드러운 배경색 */
+            --text-color: #333333;
+            --light-gray: #e9ecef;
+        }
+
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            scroll-behavior: smooth;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 80px 20px;
+            background-color: #ffffff;
+            border-bottom: 1px solid var(--light-gray);
+        }
+        header h1 {
+            font-size: 2.8em;
+            color: var(--primary-color);
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        header h2 {
+            font-size: 1.4em;
+            color: var(--secondary-color);
+            font-weight: 400;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            background-color: var(--primary-color);
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .nav a {
+            margin: 0 25px;
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: 400;
+            font-size: 1em;
+            transition: color 0.3s;
+        }
+        .nav a:hover {
+            color: var(--light-gray);
+        }
+        section {
+            padding: 80px 20px;
+            text-align: center;
+        }
+        section:nth-of-type(even) {
+            background-color: var(--light-gray);
+        }
+        h3 {
+            font-size: 2.2em;
+            color: var(--primary-color);
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        .section-description {
+            font-size: 1.2em;
+            color: var(--text-color);
+            max-width: 700px;
+            margin: 0 auto 50px;
+        }
+        .values {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 50px;
+        }
+        .value-box {
+            flex-basis: 45%;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            text-align: left;
+        }
+        .value-box h4 {
+            font-size: 1.5em;
+            color: var(--primary-color);
+            font-weight: 700;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+        .value-box p {
+            font-size: 1em;
+            color: var(--text-color);
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+        .cta-container {
+            text-align: center;
+            padding: 80px 20px;
+            background-color: #ffffff;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 18px 40px;
+            font-size: 1.3em;
+            font-weight: 700;
+            color: #ffffff;
+            background-color: var(--primary-color);
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: var(--secondary-color);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="nav">
+        <a href="#intro">팀 소개</a>
+        <a href="#values">가치 제안</a>
+        <a href="#proof">사회적 증거</a>
+        <a href="#cta">사전 예약</a>
+    </nav>
+
+    <header>
+        <div class="container">
+            <h1>우리는 다르게 살아왔지만 같은 어려움을 겪습니다.</h1>
+            <h2>이제는 서로의 이야기를 들어볼 시간입니다.</h2>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="intro">
+            <h3>팀 '오래된 미래'를 소개합니다.</h3>
+            <p class="section-description">
+                세대 간의 경험과 관점 차이는 소통의 벽이 되고 있습니다. 
+                저희 오래된 미래는 이 단절을 넘어 서로의 삶을 기록한 '자서전'을 통해 세대 간 진정한 소통을 만들어가는 팀입니다.
+            </p>
+        </section>
+
+        <section id="values">
+            <h3>우리가 만드는 가치</h3>
+            <p class="section-description">
+                일방적인 조언이 아닌 서로의 삶의 기록을 통해 
+                공감하고 이해하는 새로운 경험을 선물합니다.
+            </p>
+            <div class="values">
+                <div class="value-box">
+                    <h4>👨‍🦳 기성세대를 위한 가치</h4>
+                    <p>당신의 경험은 미래의 지혜입니다. 젊은 세대에게 귀중한 조언이 될 의미 있는 자서전을 만드세요. 
+                        전문적인 글쓰기 가이드를 통해 당신의 이야기를 쉽고 즐겁게 완성할 수 있습니다.</p>
+                </div>
+                <div class="value-box">
+                    <h4>👩‍🦱 청년세대를 위한 가치</h4>
+                    <p>진정한 멘토를 만나는 가장 솔직한 방법. 성공과 실패 그 모든 순간이 담긴 선배 세대의 자서전을 읽고 
+                      궁금한 점은 익명 채팅을 통해 직접 물어보며 진솔한 답을 얻을 수 있습니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="proof">
+            <h3>세대 연결의 가능성을 확인하세요.</h3>
+            <p class="section-description">
+                저희 팀의 설문조사 결과 응답자 100%가 '자서전 작성 및 열람 활동을 통해 세대 간 이해를 높일 수 있을 것'이라고 답했습니다. 
+                많은 분들이 새로운 소통 방식을 기대하고 있습니다.
+            </p>
+        </section>
+
+        <section id="cta">
+            <h3>새로운 소통의 시작, 함께 하시겠어요?</h3>
+            <p class="section-description">
+                세대 연결의 첫걸음 '오래된 미래'와 함께 시작하세요.<br>
+                지금 사전 예약하시면 런칭 후 누구보다 빠르게 이 서비스를 제공해 드립니다.
+            </p>
+            <div class="cta-container">
+                <a href="https://buly.kr/2qYpNT7" class="cta-button">
+                    서비스 사전 예약하기
+                </a>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
